@@ -1,5 +1,5 @@
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Heart, Sparkles, BookOpenText } from 'lucide-react';
+import { Heart, Sparkles, BookOpenText, Users } from 'lucide-react';
 
 const benefits = [
   {
@@ -17,6 +17,11 @@ const benefits = [
     title: '10 Recomendações Exclusivas',
     description: 'Descubra 10 doramas selecionados a dedo que vão te fazer rir, chorar e se apaixonar, com análises e motivos para assistir.',
   },
+  {
+    icon: <Users className="h-8 w-8 text-primary" />,
+    title: 'Comunidade Dorama Lover',
+    description: 'Junte-se a outras apaixonadas por doramas, troque dicas, participe de discussões e faça novas amizades em nossa comunidade.',
+  },
 ];
 
 export function Benefits() {
@@ -29,7 +34,7 @@ export function Benefits() {
             Um guia feito com carinho para quem ama doramas e quer levar a magia deles para o dia a dia.
           </p>
         </div>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {benefits.map((benefit, index) => (
             <div key={index} className="animate-in fade-in slide-in-from-bottom-12 duration-500" style={{ animationDelay: `${index * 150}ms` }}>
               <Card className="flex flex-col items-center text-center p-8 h-full transition-transform duration-300 hover:-translate-y-2">
