@@ -10,9 +10,22 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  searchParams,
 }: Readonly<{
   children: React.ReactNode;
+  searchParams?: { [key: string]: string | string[] | undefined };
 }>) {
+  // Testa se o parâmetro 'blank' é 'true' na URL
+  if (searchParams?.blank === 'true') {
+    // Se for, retorna uma página completamente em branco
+    return (
+      <html lang="pt-BR">
+        <body></body>
+      </html>
+    );
+  }
+
+  // Caso contrário, renderiza o site normalmente
   return (
     <html lang="pt-BR" className="scroll-smooth">
       <head>
