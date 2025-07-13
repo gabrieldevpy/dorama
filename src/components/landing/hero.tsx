@@ -17,18 +17,17 @@ export function Hero() {
         </p>
         <Button asChild size="lg" className="h-12 px-8 text-lg">
           <a href={purchaseLink} target="_blank" rel="noopener noreferrer">
-            Descobrir meu próximo dorama
+            Quero meu Guia Agora!
           </a>
         </Button>
       </div>
       <div className="flex justify-center lg:justify-end animate-in fade-in slide-in-from-right-12 duration-500">
         <Image
-          src="https://placehold.co/400x520.png"
+          src="/capa-dorama.png"
           alt="Capa do PDF Menos Drama, Mais Dorama"
           width={400}
           height={520}
           className="rounded-xl shadow-2xl shadow-primary/20 transform hover:scale-105 transition-transform duration-300"
-          data-ai-hint="book cover"
           priority
         />
       </div>
