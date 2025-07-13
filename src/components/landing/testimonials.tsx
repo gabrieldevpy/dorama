@@ -38,7 +38,7 @@ export function Testimonials() {
               <Card className="p-6 h-full">
                 <CardContent className="p-0 flex flex-col items-center text-center">
                   <Avatar className="w-20 h-20 mb-4 border-2 border-primary/50">
-                    <AvatarImage src={testimonial.image} alt={testimonial.name} />
+                    <AvatarImage src={testimonial.image} alt={testimonial.name} data-ai-hint={testimonial.dataAiHint} />
                     <AvatarFallback>{testimonial.avatar}</AvatarFallback>
                   </Avatar>
                   <blockquote className="text-muted-foreground italic flex-1">"{testimonial.quote}"</blockquote>
