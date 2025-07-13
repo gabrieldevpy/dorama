@@ -29,7 +29,7 @@ export function Hero() {
           alt="Capa do PDF Menos Drama, Mais Dorama"
           width={400}
           height={520}
-          className="rounded-lg shadow-2xl shadow-primary/20 transform hover:scale-105 transition-transform duration-300"
+          className="rounded-xl shadow-2xl shadow-primary/20 transform hover:scale-105 transition-transform duration-300"
           priority
         />
       </div>
