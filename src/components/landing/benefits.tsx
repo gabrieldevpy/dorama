@@ -14,8 +14,8 @@ const benefits = [
   },
   {
     icon: <BookOpenText className="h-8 w-8 text-primary" />,
-    title: 'Guia de Clichês e Temas',
-    description: 'Navegue pelo universo dos doramas com nosso guia de clichês e temas e o que eles revelam sobre nós.',
+    title: '10 Recomendações Imperdíveis',
+    description: 'Descubra 10 doramas selecionados a dedo que vão te fazer rir, chorar e se apaixonar, com análises e curiosidades.',
   },
 ];
 

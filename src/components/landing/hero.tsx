@@ -16,7 +16,7 @@ export function Hero() {
           <span className="text-primary">Mais Dorama.</span>
         </h1>
         <p className="text-lg text-muted-foreground max-w-lg">
-          Transforme sua paixão por doramas em uma jornada de autoconhecimento e alegria. Nosso guia é o passaporte para um universo de emoções, cultura e, claro, muito romance.
+          Sua busca pelo próximo dorama perfeito acabou. Preparamos um guia com 10 recomendações imperdíveis que vão te conquistar.
         </p>
         <Button size="lg" className="h-12 px-8 text-lg" onClick={scrollToPurchase}>
           Eu Quero!

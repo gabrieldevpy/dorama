@@ -18,7 +18,7 @@ export function CtaSection() {
             Pronta para sua próxima obsessão?
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Não espere mais para aprofundar sua paixão. Adquira o "Menos Drama, Mais Dorama" e comece sua nova jornada hoje mesmo.
+            Adquira seu guia com 10 recomendações incríveis de doramas e comece a maratonar hoje mesmo. É paixão à primeira vista garantida!
           </p>
           <div className="mt-8">
             <Button 
