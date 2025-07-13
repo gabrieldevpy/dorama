@@ -3,12 +3,9 @@
 import { Button } from '@/components/ui/button';
 import { Flower2, Heart } from 'lucide-react';
 
-export function CtaSection() {
-  const handlePurchase = () => {
-    // Placeholder for purchase logic, e.g., redirect to a checkout page.
-    alert('Redirecionando para a página de download!');
-  };
+const purchaseLink = 'https://seu-link-de-compra.com'; // << Altere seu link aqui
 
+export function CtaSection() {
   return (
     <section id="purchase-section" className="py-20 md:py-32">
       <div className="container text-center">
@@ -22,15 +19,17 @@ export function CtaSection() {
           </p>
           <div className="mt-8">
             <Button 
+              asChild
               size="lg" 
               className="h-14 text-xl px-10 shadow-lg shadow-primary/30 transform hover:scale-105 transition-transform duration-300" 
-              onClick={handlePurchase}
             >
-              <Flower2 className="mr-2 h-6 w-6" />
-              Acessar o Guia Agora
+              <a href={purchaseLink} target="_blank" rel="noopener noreferrer">
+                <Flower2 className="mr-2 h-6 w-6" />
+                Quero meu Guia!
+              </a>
             </Button>
           </div>
-          <p className="text-sm mt-4 text-muted-foreground">Acesso imediato ao material.</p>
+          <p className="text-sm mt-4 text-muted-foreground">Acesso imediato ao material + comunidade.</p>
         </div>
       </div>
     </section>
