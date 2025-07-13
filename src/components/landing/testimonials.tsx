@@ -1,25 +1,29 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent } from "@/components/ui/card";
 
+import image1 from '@/app/1.png';
+import image2 from '@/app/2.png';
+import image3 from '@/app/3.png';
+
 const testimonials = [
   {
     name: 'Juliana S.',
     avatar: 'JS',
-    image: '/app/1.png',
+    image: image1,
     dataAiHint: 'woman portrait',
     quote: 'Este PDF mudou a forma como assisto doramas! Agora, cada cena tem um significado mais profundo. É como redescobrir meu hobby favorito.',
   },
   {
     name: 'Fernanda L.',
     avatar: 'FL',
-    image: '/app/2.png',
+    image: image2,
     dataAiHint: 'woman smiling',
     quote: 'Eu amei a seção sobre cultura coreana! Aprendi tanto e agora me sinto muito mais conectada com as histórias. Super recomendo!',
   },
   {
     name: 'Beatriz M.',
     avatar: 'BM',
-    image: '/app/3.png',
+    image: image3,
     dataAiHint: 'person happy',
     quote: 'O guia de clichês é hilário e genial! Me diverti muito identificando os padrões e entendendo por que amamos tanto eles.',
   },
@@ -38,7 +42,7 @@ export function Testimonials() {
               <Card className="p-6 h-full">
                 <CardContent className="p-0 flex flex-col items-center text-center">
                   <Avatar className="w-20 h-20 mb-4 border-2 border-primary/50">
-                    <AvatarImage src={testimonial.image} alt={testimonial.name} data-ai-hint={testimonial.dataAiHint} />
+                    <AvatarImage src={testimonial.image.src} alt={testimonial.name} data-ai-hint={testimonial.dataAiHint} />
                     <AvatarFallback>{testimonial.avatar}</AvatarFallback>
                   </Avatar>
                   <blockquote className="text-muted-foreground italic flex-1">"{testimonial.quote}"</blockquote>
