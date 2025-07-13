@@ -5,21 +5,21 @@ const testimonials = [
   {
     name: 'Juliana S.',
     avatar: 'JS',
-    image: 'https://placehold.co/100x100.png',
+    image: '/app/1.png',
     dataAiHint: 'woman portrait',
     quote: 'Este PDF mudou a forma como assisto doramas! Agora, cada cena tem um significado mais profundo. É como redescobrir meu hobby favorito.',
   },
   {
     name: 'Fernanda L.',
     avatar: 'FL',
-    image: 'https://placehold.co/100x100.png',
+    image: '/app/2.png',
     dataAiHint: 'woman smiling',
     quote: 'Eu amei a seção sobre cultura coreana! Aprendi tanto e agora me sinto muito mais conectada com as histórias. Super recomendo!',
   },
   {
     name: 'Beatriz M.',
     avatar: 'BM',
-    image: 'https://placehold.co/100x100.png',
+    image: '/app/3.png',
     dataAiHint: 'person happy',
     quote: 'O guia de clichês é hilário e genial! Me diverti muito identificando os padrões e entendendo por que amamos tanto eles.',
   },
@@ -38,7 +38,7 @@ export function Testimonials() {
               <Card className="p-6 h-full">
                 <CardContent className="p-0 flex flex-col items-center text-center">
                   <Avatar className="w-20 h-20 mb-4 border-2 border-primary/50">
-                    <AvatarImage src={testimonial.image} alt={testimonial.name} data-ai-hint={testimonial.dataAiHint} />
+                    <AvatarImage src={testimonial.image} alt={testimonial.name} />
                     <AvatarFallback>{testimonial.avatar}</AvatarFallback>
                   </Avatar>
                   <blockquote className="text-muted-foreground italic flex-1">"{testimonial.quote}"</blockquote>
