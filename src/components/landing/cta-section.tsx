@@ -6,7 +6,7 @@ import { Flower2, Heart } from 'lucide-react';
 export function CtaSection() {
   const handlePurchase = () => {
     // Placeholder for purchase logic, e.g., redirect to a checkout page.
-    alert('Redirecionando para a página de compra!');
+    alert('Redirecionando para a página de download!');
   };
 
   return (
@@ -18,7 +18,7 @@ export function CtaSection() {
             Pronta para sua próxima obsessão?
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Adquira seu guia com 10 recomendações incríveis de doramas e comece a maratonar hoje mesmo. É paixão à primeira vista garantida!
+            Receba seu guia com 10 recomendações incríveis de doramas e comece a maratonar hoje mesmo. É paixão à primeira vista garantida!
           </p>
           <div className="mt-8">
             <Button 
@@ -27,10 +27,10 @@ export function CtaSection() {
               onClick={handlePurchase}
             >
               <Flower2 className="mr-2 h-6 w-6" />
-              Comprar Agora por R$ 29,90
+              Acessar o Guia Agora
             </Button>
           </div>
-          <p className="text-sm mt-4 text-muted-foreground">Compra segura e acesso imediato ao PDF.</p>
+          <p className="text-sm mt-4 text-muted-foreground">Acesso imediato ao material.</p>
         </div>
       </div>
     </section>

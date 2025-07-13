@@ -16,7 +16,7 @@ export function Header() {
           <span className="font-headline text-lg font-bold">Dorama Delight</span>
         </a>
         <Button onClick={scrollToPurchase} variant="ghost" className="hover:bg-primary/10">
-          Comprar Agora
+          Acessar o Guia
         </Button>
       </div>
     </header>

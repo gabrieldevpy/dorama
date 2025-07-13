@@ -9,13 +9,13 @@ const benefits = [
   },
   {
     icon: <Sparkles className="h-8 w-8 text-primary" />,
-    title: 'Descubra a Cultura Coreana',
-    description: 'Vá além da tela e mergulhe nos costumes, culinária e curiosidades da Coreia do Sul que enriquecem cada cena e diálogo.',
+    title: 'Mergulhe na Cultura Coreana',
+    description: 'Vá além da tela e explore os costumes, curiosidades e a riqueza da cultura coreana que tornam cada dorama único.',
   },
   {
     icon: <BookOpenText className="h-8 w-8 text-primary" />,
-    title: '10 Recomendações Imperdíveis',
-    description: 'Descubra 10 doramas selecionados a dedo que vão te fazer rir, chorar e se apaixonar, com análises e curiosidades.',
+    title: '10 Recomendações Exclusivas',
+    description: 'Descubra 10 doramas selecionados a dedo que vão te fazer rir, chorar e se apaixonar, com análises e motivos para assistir.',
   },
 ];
 
@@ -26,7 +26,7 @@ export function Benefits() {
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="font-headline text-3xl md:text-4xl font-bold">Tudo que você precisa para Dorama-izar sua vida</h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Um material feito com carinho para quem ama doramas e quer levar a magia deles para o dia a dia.
+            Um guia feito com carinho para quem ama doramas e quer levar a magia deles para o dia a dia.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">

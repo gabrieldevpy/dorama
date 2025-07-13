@@ -20,7 +20,7 @@ export function Hero() {
           Sua busca pelo próximo dorama perfeito acabou. Preparamos um guia com 10 recomendações imperdíveis que vão te conquistar.
         </p>
         <Button size="lg" className="h-12 px-8 text-lg" onClick={scrollToPurchase}>
-          Eu Quero!
+          Descubra os Doramas
         </Button>
       </div>
       <div className="flex justify-center lg:justify-end animate-in fade-in slide-in-from-right-12 duration-500">
