@@ -3,6 +3,7 @@
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import { purchaseLink } from '@/config/links';
+import CapaDorama from '@/app/capa-dorama.png';
 
 export function Hero() {
   return (
@@ -17,15 +18,14 @@ export function Hero() {
         </p>
         <Button asChild size="lg" className="h-12 px-8 text-lg">
           <a href={purchaseLink} target="_blank" rel="noopener noreferrer">
-            Quero meu Guia!
+            Acessar o Guia!
           </a>
         </Button>
       </div>
       <div className="flex justify-center lg:justify-end animate-in fade-in slide-in-from-right-12 duration-500">
         <Image
-          src="https://placehold.co/400x520.png"
+          src={CapaDorama}
           alt="Capa do Guia de Doramas"
-          data-ai-hint="korean drama"
           width={400}
           height={520}
           className="rounded-xl shadow-2xl shadow-primary/20 transform hover:scale-105 transition-transform duration-300"
