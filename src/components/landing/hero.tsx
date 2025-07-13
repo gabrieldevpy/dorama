@@ -13,18 +13,18 @@ export function Hero() {
           <span className="text-primary">Mais Dorama.</span>
         </h1>
         <p className="text-lg text-muted-foreground max-w-lg">
-          Sua busca pelo próximo dorama perfeito acabou. Preparamos um guia com 10 recomendações imperdíveis que vão te conquistar e uma comunidade exclusiva.
+          Sua busca pelo próximo dorama perfeito acabou. Descubra recomendações imperdíveis que vão te conquistar e acesse nossa comunidade exclusiva.
         </p>
         <Button asChild size="lg" className="h-12 px-8 text-lg">
           <a href={purchaseLink} target="_blank" rel="noopener noreferrer">
-            Quero meu Guia Agora!
+            Receber meu Guia
           </a>
         </Button>
       </div>
       <div className="flex justify-center lg:justify-end animate-in fade-in slide-in-from-right-12 duration-500">
         <Image
           src="/capa-dorama.png"
-          alt="Capa do PDF Menos Drama, Mais Dorama"
+          alt="Capa do Guia de Doramas"
           width={400}
           height={520}
           className="rounded-xl shadow-2xl shadow-primary/20 transform hover:scale-105 transition-transform duration-300"
