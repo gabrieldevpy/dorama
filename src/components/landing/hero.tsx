@@ -2,6 +2,7 @@
 
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
+import CapaDorama from '@/app/capa-dorama.png';
 
 export function Hero() {
   const scrollToPurchase = () => {
@@ -24,7 +25,7 @@ export function Hero() {
       </div>
       <div className="flex justify-center lg:justify-end animate-in fade-in slide-in-from-right-12 duration-500">
         <Image
-          src="/capa-dorama.png"
+          src={CapaDorama}
           alt="Capa do PDF Menos Drama, Mais Dorama"
           width={400}
           height={520}
