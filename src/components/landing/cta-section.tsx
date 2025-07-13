@@ -2,8 +2,7 @@
 
 import { Button } from '@/components/ui/button';
 import { Flower2, Heart } from 'lucide-react';
-
-const purchaseLink = 'https://seu-link-de-compra.com'; // << Altere seu link aqui
+import { purchaseLink } from '@/config/links';
 
 export function CtaSection() {
   return (
