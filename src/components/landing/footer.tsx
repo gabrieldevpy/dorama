@@ -21,10 +21,7 @@ export function Footer() {
             Voltar para o início
           </a>
         </div>
-        <p className="mt-6 text-xs">
-          Site criado por Gabriel – Contato: seuemail@gmail.com
-        </p>
-        <p className="mt-2 text-xs">© 2024 Dorama Delight. Todos os direitos reservados.</p>
+        <p className="mt-6 text-xs">© 2024 Dorama Delight. Todos os direitos reservados.</p>
       </div>
     </footer>
   );
