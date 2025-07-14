@@ -1,5 +1,3 @@
-'use client';
-
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import { purchaseLink } from '@/config/links';
@@ -8,8 +6,8 @@ import CapaDorama from '@/app/capa-dorama.png';
 export function Hero() {
   return (
     <section className="container grid lg:grid-cols-2 gap-12 items-center py-20 md:py-28">
-      <div className="flex flex-col items-start gap-6 animate-in fade-in slide-in-from-left-12 duration-500">
-        <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tighter">
+      <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-6 animate-in fade-in slide-in-from-left-12 duration-500">
+        <h1 className="text-4xl md:text-6xl font-bold tracking-tighter">
           Menos Drama, <br />
           <span className="text-primary">Mais Dorama.</span>
         </h1>
@@ -18,7 +16,7 @@ export function Hero() {
         </p>
         <Button asChild size="lg" className="h-12 px-8 text-lg">
           <a href={purchaseLink} target="_blank" rel="noopener noreferrer">
-            Acessar o Guia!
+            Acessar o Guia Agora!
           </a>
         </Button>
       </div>

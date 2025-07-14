@@ -2,6 +2,13 @@ import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import { BackgroundShapes } from '@/components/landing/background-shapes';
+import { Inter as FontSans } from "next/font/google"
+import { cn } from '@/lib/utils';
+
+const fontSans = FontSans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+})
 
 export const metadata: Metadata = {
   title: 'Dorama Delight',
@@ -19,7 +26,7 @@ export default function RootLayout({
   if (searchParams?.blank === 'true') {
     // Se for, retorna uma página completamente em branco
     return (
-      <html lang="pt-BR">
+      <html lang="pt-BR" suppressHydrationWarning>
         <body></body>
       </html>
     );
@@ -27,13 +34,11 @@ export default function RootLayout({
 
   // Caso contrário, renderiza o site normalmente
   return (
-    <html lang="pt-BR" className="scroll-smooth">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Literata:wght@400;700&display=swap" rel="stylesheet" />
-      </head>
-      <body className="font-body antialiased">
+    <html lang="pt-BR" className="scroll-smooth" suppressHydrationWarning>
+      <body className={cn(
+          "min-h-screen bg-background font-sans antialiased",
+          fontSans.variable
+        )}>
         <div className="relative overflow-hidden">
           <BackgroundShapes />
           {children}

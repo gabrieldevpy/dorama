@@ -1,5 +1,3 @@
-'use client';
-
 import { Button } from '@/components/ui/button';
 import { Flower2, Heart } from 'lucide-react';
 import { purchaseLink } from '@/config/links';
@@ -10,7 +8,7 @@ export function CtaSection() {
       <div className="container text-center">
         <div className="max-w-3xl mx-auto flex flex-col items-center">
           <Heart className="h-12 w-12 text-primary mx-auto mb-4 animate-pulse" />
-          <h2 className="font-headline text-3xl md:text-5xl font-bold">
+          <h2 className="text-3xl md:text-5xl font-bold">
             Pronta para sua próxima obsessão?
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">

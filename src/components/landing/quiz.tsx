@@ -1,5 +1,5 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { HelpCircle } from "lucide-react";
 
 const quizQuestions = [
@@ -23,11 +23,11 @@ const quizQuestions = [
 
 export function Quiz() {
     return (
-        <section className="py-20 md:py-28">
+        <section id="quiz" className="py-20 md:py-28">
             <div className="container">
                 <div className="max-w-3xl mx-auto text-center mb-16">
                     <HelpCircle className="h-12 w-12 text-primary mx-auto mb-4" />
-                    <h2 className="font-headline text-3xl md:text-4xl font-bold">Quiz Dorama Lover</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold">Quiz Dorama Lover</h2>
                     <p className="mt-4 text-lg text-muted-foreground">
                         Será que você é uma dorameira de carteirinha? Responda e descubra!
                     </p>
@@ -36,12 +36,13 @@ export function Quiz() {
                 <Card className="max-w-2xl mx-auto shadow-lg">
                     <CardHeader>
                         <CardTitle>Responda se for capaz!</CardTitle>
+                        <CardDescription>Clique nas perguntas para revelar as respostas.</CardDescription>
                     </CardHeader>
                     <CardContent>
                         <Accordion type="single" collapsible className="w-full">
                             {quizQuestions.map((item, index) => (
                                 <AccordionItem value={`item-${index}`} key={index}>
-                                    <AccordionTrigger className="text-left hover:no-underline">
+                                    <AccordionTrigger className="text-left hover:no-underline text-base">
                                         {item.question}
                                     </AccordionTrigger>
                                     <AccordionContent className="text-muted-foreground">

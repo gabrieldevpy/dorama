@@ -17,7 +17,7 @@ export function BackgroundShapes() {
         <Heart
           key={i}
           className={cn(
-            'absolute text-primary/25 fill-current',
+            'absolute text-primary/10 fill-current',
             shape.size,
             shape.top,
             shape.left,
