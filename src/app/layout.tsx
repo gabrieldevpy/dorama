@@ -1,14 +1,10 @@
-import type {Metadata} from 'next';
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import { BackgroundShapes } from '@/components/landing/background-shapes';
-import { Inter as FontSans } from "next/font/google"
-import { cn } from '@/lib/utils';
 
-const fontSans = FontSans({
-  subsets: ["latin"],
-  variable: "--font-sans",
-})
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Dorama Delight',
@@ -22,9 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
   searchParams?: { [key: string]: string | string[] | undefined };
 }>) {
-  // Testa se o parâmetro 'blank' é 'true' na URL
   if (searchParams?.blank === 'true') {
-    // Se for, retorna uma página completamente em branco
     return (
       <html lang="pt-BR" suppressHydrationWarning>
         <body></body>
@@ -32,13 +26,9 @@ export default function RootLayout({
     );
   }
 
-  // Caso contrário, renderiza o site normalmente
   return (
     <html lang="pt-BR" className="scroll-smooth" suppressHydrationWarning>
-      <body className={cn(
-          "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable
-        )}>
+      <body className={inter.className}>
         <div className="relative overflow-hidden">
           <BackgroundShapes />
           {children}

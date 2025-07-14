@@ -1,5 +1,4 @@
 import type {Config} from 'tailwindcss';
-const { fontFamily } = require("tailwindcss/defaultTheme")
 
 const config = {
   darkMode: ['class'],
@@ -18,9 +17,6 @@ const config = {
       },
     },
     extend: {
-      fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
-      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -75,8 +71,8 @@ const config = {
           '50%': { transform: 'translateY(-20px) rotate(5deg)' },
         },
         'float-2': {
-          '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
-          '50%': { transform: 'translateY(-25px) rotate(-5deg)' },
+          '0%, 100%': { transform: 'translateY(-25px) rotate(-5deg)' },
+          '50%': { transform: 'translateY(-15px) rotate(3deg)' },
         },
         'float-3': {
           '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
