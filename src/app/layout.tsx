@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import { BackgroundShapes } from '@/components/landing/background-shapes';
+import type { ReactNode } from 'react';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
@@ -13,19 +14,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-  searchParams,
-}: {
-  children: React.ReactNode;
-  searchParams?: { [key: string]: string | string[] | undefined };
-}) {
-  if (searchParams?.blank === 'true') {
-    return (
-      <html lang="pt-BR" suppressHydrationWarning>
-        <body className={inter.variable}></body>
-      </html>
-    );
-  }
-
+}: Readonly<{
+  children: ReactNode;
+}>) {
   return (
     <html lang="pt-BR" className={`${inter.variable} font-sans scroll-smooth`} suppressHydrationWarning>
       <body>
