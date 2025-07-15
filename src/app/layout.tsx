@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import { BackgroundShapes } from '@/components/landing/background-shapes';
-import { Literata } from 'next/font/google';
 
-const literata = Literata({ subsets: ['latin'], variable: '--font-literata' });
+const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
 export const metadata: Metadata = {
   title: 'Dorama Delight',
@@ -21,13 +21,13 @@ export default function RootLayout({
   if (searchParams?.blank === 'true') {
     return (
       <html lang="pt-BR" suppressHydrationWarning>
-        <body className={literata.variable}></body>
+        <body className={inter.variable}></body>
       </html>
     );
   }
 
   return (
-    <html lang="pt-BR" className={`${literata.variable} font-sans scroll-smooth`} suppressHydrationWarning>
+    <html lang="pt-BR" className={`${inter.variable} font-sans scroll-smooth`} suppressHydrationWarning>
       <body>
         <div className="relative overflow-hidden">
           <BackgroundShapes />
